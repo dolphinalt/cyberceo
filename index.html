@@ -16,7 +16,7 @@
 		rel="stylesheet">
 
 	<!-- etc. -->
-	<svg class="crop">
+	<!-- <svg class="crop">
 		<defs>
 			<clipPath id="c94c908c38">
 				<path d="M 23 0.300781 L 455.289062 0.300781 L 455.289062 383.699219 L 23 383.699219 Z M 23 0.300781 "
@@ -76,15 +76,30 @@
 			  />
 			</g>
 		  </g>
-	</svg>
+	</svg> -->
 	<style>
+		body {
+			background-color: #200459;
+		}
 		html {
 			font-size: 22.5px;
 		}
-
-		.bg-cyber {
-			background-color: #200459;
+		td {
+			vertical-align: top;
 		}
+		body {
+			font-family: 'Raleway', sans-serif !important;
+			color: #DFDFDF;
+		}
+
+/* figure img { */
+	/* clip-path: url(#carouselCrop); */
+/* } */
+        .image-container {
+            width: 100%; /* Adjust based on your image size */
+            overflow: hidden; /* Ensures the image doesn't overflow the container */
+            clip-path: path('M5.0394 71.0764C-10.3668 37.9336 13.8317 0 50.3802 0H561C588.614 0 611 22.3858 611 50V462C611 489.614 588.614 512 561 512H241.896C222.442 512 204.755 500.717 196.555 483.076L5.0394 71.0764Z');
+        }
 
 		.cyber-blue {
 			color: #92D1F1;
@@ -98,62 +113,90 @@
 			background: #92D1F1;
 		}
 
-		body {
-			font-family: 'Raleway', sans-serif !important;
-			color: #DFDFDF;
+		.header {
+			font-size: 69px;
 		}
-		figure img {
-			clip-path: url(#carouselCrop);
+
+		.body {
+			font-size: 30px;
 		}
+
+		.body-small {
+			font-size: 22.5px;
+		}
+
 		/* svg.crop { */
-			/* position: absolute; */
-			/* top: -999px; */
-			/* left: -999px; */
-			/* width: 0; */
-			/* height: 0; */
+		/* position: absolute; */
+		/* top: -999px; */
+		/* left: -999px; */
+		/* width: 0; */
+		/* height: 0; */
 		/* } */
 	</style>
 </head>
 
 <body>
 
-	<div class="bg-cyber text-white">
+	<div class="text-white">
 		<div class="pt-5 ps-5">
-			<img src="assets/svg/cyberCEO.svg" alt="CyberCEO" class="d-inline-block img-fluid pt-3 ps-5 pe-5" style="height:74px">
-			<div class="d-inline-block ps-5 fs-6 cyber-blue"><b>HOME</b></div>
-			<div class="d-inline-block ps-5 fs-6 cyber-blue"><b>TEAM</b></div>
-			<div class="d-inline-block ps-5 fs-6 cyber-blue"><b>EVENTS</b></div>
-			<div class="d-inline-block ps-5 pe-5 fs-6 cyber-blue"><b>DONATE</b></div>
-			<div style="width:225px; height:54px;"
-				class="d-inline-block fs-4 bg-cyber-blue text-center rounded-pill deep-blue"><b>JOIN US</b></div>
-			<div class="pt-5 ps-4 fs-1 cyber-blue"><b>Become<br>Cyber Secure.</b></div>
-			<div class="ps-4 fs-5">Keeping our future and current generations<br><b>cyber safe</b>.</div>
-
-			<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-				<div class="carousel-inner">
-				  <div class="carousel-item active" data-bs-interval="6000">
-					<img src="assets/carousel/cyberCEO_1.png" class="d-block w-100" alt="...">
-				  </div>
-				  <div class="carousel-item active" data-bs-interval="6000">
-					<img src="assets/carousel/cyberCEO_2.png" class="d-block w-100" alt="...">
-				  </div>
-				  <div class="carousel-item active" data-bs-interval="6000">
-					<img src="assets/carousel/cyberCEO_3.png" class="d-block w-100" alt="...">
-				  </div>
-				  <div class="carousel-item active" data-bs-interval="6000">
-					<img src="assets/carousel/cyberCEO_4.png" class="d-block w-100" alt="...">
-				  </div>
-				  <div class="carousel-item active" data-bs-interval="6000">
-					<img src="assets/carousel/cyberCEO_5.png" class="d-block w-100" alt="...">
-				  </div>
-				  <div class="carousel-item active" data-bs-interval="6000">
-					<img src="assets/carousel/cyberCEO_6.png" class="d-block w-100" alt="...">
-				  </div>
-				  <div class="carousel-item active" data-bs-interval="6000">
-					<img src="assets/carousel/cyberCEO_7.png" class="d-block w-100" alt="...">
-				  </div>
-				</div>
-			  </div>
+			<table>
+				<tr>
+					<td>
+					<img src="assets/svg/cyberCEO.svg" alt="CyberCEO" class="d-inline-block img-fluid pt-3 ps-5 pe-5" style="height:74px">
+					</td>
+					<td>
+					<div class="d-inline-block ps-5 body-small cyber-blue"><b>HOME</b></div>
+					</td>
+					<td>
+					<div class="d-inline-block ps-5 body-small cyber-blue"><b>TEAM</b></div>
+					</td>
+					<td>
+					<div class="d-inline-block ps-5 body-small cyber-blue"><b>EVENTS</b></div>
+					</td>
+					<td>
+					<div class="d-inline-block ps-5 pe-5 body-small cyber-blue"><b>DONATE</b></div>
+					</td>
+					<td>
+					<div style="width:225px; height:54px; justify-content: center;" class="d-inline-block body-small bg-cyber-blue text-center rounded-pill deep-blue"><b>Join us!</b></div>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td style="width: 45%;">
+						<div class="pt-5 ps-4 header cyber-blue"><b>Become<br>Cyber Secure.</b></div>
+						<div class="ps-4 body">Keeping our future and current<br>generations <b>cyber safe</b>.</div>
+						<div class="pt-5 ps-4 body-small cyber-blue" style="text-align: center;"><b>SEE MORE</b></div>
+					</td>
+					<td>
+						<div id="carouselExampleInterval" class= "carousel slide image-container"
+							data-bs-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active" data-bs-interval="6000">
+									<img src="assets/carousel/CyberCEO_20240129_Villa_RB_01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item" data-bs-interval="6000">
+									<img src="assets/carousel/CyberCEO_20240129_Villa_RB_02.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item" data-bs-interval="6000">
+									<img src="assets/carousel/CyberCEO_20240129_Villa_RB_03.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item" data-bs-interval="6000">
+									<img src="assets/carousel/CyberCEO_20240129_Villa_RB_04.jpg" class="d-block w-100" alt="..."> 
+								</div>
+								<div class="carousel-item" data-bs-interval="6000">
+									<img src="assets/carousel/CyberCEO_20240129_Villa_RB_05.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item" data-bs-interval="6000">
+									<img src="assets/carousel/CyberCEO_20240129_Villa_RB_06.jpg" class="d-block w-100" alt="...">
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
 		</div>
 	</div>
 
