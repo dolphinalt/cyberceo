@@ -67,6 +67,39 @@
 			margin-left: 3%;
 			margin-right: 3%;
 		}
+
+		.gallery {
+            background-color: #919191;
+            color: #200459;
+            border-radius: 50px;
+            width:320px;
+			height:400px;
+		}
+		.col {
+			background-color: transparent !important;
+    		border: 0 !important;
+		}
+		.card {
+			width: 320px !important;
+			height: 400px !important;
+        	display: inline-block;
+        	vertical-align: top;
+		}
+		.largePhoto {
+			width: 75%;
+			border-radius:50px
+		}
+
+		.table tr {
+			margin-bottom: 20px;
+		}
+
+		.container {
+        	display: flex;
+        	flex-direction: column; /* Arrange items vertically */
+        	align-items: center; /* Center items horizontally */
+        	justify-content: center; /* Center items vertically */
+    	}
 	</style>
 </head>
 
@@ -86,7 +119,7 @@
 								<a class="nav-link cyber-blue body-small" aria-current="page" href="#"><b>Home</b></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link cyber-blue body-small" href="team.html"><b>Team</b></a>
+								<a class="nav-link cyber-blue body-small" href="#"><b>Team</b></a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link cyber-blue body-small" href="events.html"><b>Events</b></a>
@@ -104,42 +137,47 @@
 			</div>
 		</div>
         <br><br>
-        <div class="d-flex justify-content-center ms-4">
-            <table>
-                <tr>
-                    <td style="width: 40%;">
-                        <div class="ps-4 header cyber-blue"><b>Become<br>Cyber Secure.</b></div>
-                        <div class="ps-4 body">Keeping our future and current<br>generations <b>cyber safe</b>.</div>
-                        <div class="pt-5 ps-4 body-small cyber-blue" style="text-align: center;"><b>SEE MORE</b></div>
-                    </td>
-                    <td>
-                        <div id="carouselExampleInterval" class="carousel slide image-container" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="6000">
-                                    <img src="assets/carousel/CyberCEO_20240129_Villa_RB_01.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="6000">
-                                    <img src="assets/carousel/CyberCEO_20240129_Villa_RB_02.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="6000">
-                                    <img src="assets/carousel/CyberCEO_20240129_Villa_RB_03.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="6000">
-                                    <img src="assets/carousel/CyberCEO_20240129_Villa_RB_04.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="6000">
-                                    <img src="assets/carousel/CyberCEO_20240129_Villa_RB_05.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="6000">
-                                    <img src="assets/carousel/CyberCEO_20240129_Villa_RB_06.jpg" class="d-block w-100" alt="...">
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
+        
+		<div class="container">
+			<img class="largePhoto" src="assets/carousel/CyberCEO_20240129_Villa_RB_01.jpg">
+			<table class="table">
+				<tr>
+					<td class="col">
+						<div class="gallery">
+							<!-- Content for first td -->
+						</div>
+					</td>
+					<td class="col">
+						<div class="gallery">
+							<!-- Content for second td -->
+						</div>
+					</td>
+					<td class="col">
+						<div class="gallery">
+							<!-- Content for third td -->
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="col">
+						<div class="gallery">
+							<!-- Content for first td -->
+						</div>
+					</td>
+					<td class="col">
+						<div class="gallery">
+							<!-- Content for second td -->
+						</div>
+					</td>
+					<td class="col">
+						<div class="gallery">
+							<!-- Content for third td -->
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
 
 </body>
 
