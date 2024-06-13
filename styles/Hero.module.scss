@@ -1,0 +1,182 @@
+$cyber-blue: #92D1F1;
+$deep-blue: #200459;
+$yellow: #ffdd20;
+$green: #c5ff00;
+$red: #ff726f;
+
+.mainboxmobile {
+	display: none;
+}
+
+.mainbox {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.splitboxes {
+		width: 1200px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 40px;
+	}
+
+	.leftbox {
+		width: 500px;
+		white-space: nowrap;
+		margin-bottom: 40px; /* Adjust as needed */
+		h1 {
+			font-size: 92px;
+			font-weight: bold;
+			margin: 0;
+			span {
+				background: #92D1F1;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+		p {
+			font-size: 40px;
+			color: whitesmoke;
+			span {
+				color: $cyber-blue;
+				font-weight: bold;
+			}
+		}
+		button:nth-child(odd) {
+			width: 180px;
+			height: 46px;
+			font-size: 15px;
+			font-weight: bold;
+			color: $deep-blue;
+			background: $cyber-blue;
+			border-radius: 30px;
+			border: none;
+			outline: none;
+			transition: 0.3s;
+		}
+		button:nth-child(even) {
+			width: 180px;
+			height: 46px;
+			font-size: 15px;
+			font-weight: bold;
+			color: $deep-blue;
+			border: 3px solid $deep-blue;
+			box-sizing: border-box;
+			border-radius: 30px;
+			outline: none;
+			margin-left: 40px;
+		}
+	}	
+
+	.rightbox {
+		img {
+			width: 700px;
+		}
+	}
+}
+
+.label {
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #aaa;
+	margin-top: 20px;
+	opacity: 0.8;
+}
+
+.logobanner {
+	padding-top: 15px;
+
+	.logogrid {
+		display: flex;
+		grid-template-columns: repeat(5, 175px);
+		grid-gap: 30px;
+		justify-content: center;
+		align-items: center;
+		margin-top: 20px;
+
+		& img {
+			width: 100px;
+		}
+		.fixlogo {
+			width: 50px;
+		}
+	}
+}
+
+.imagecontainer {
+	width: 100%;
+    overflow: hidden;
+    clip-path: path('M6.13894 73.5008C-11.5955 40.1965 12.5402 0 50.2719 0H649C676.614 0 699 22.3858 699 50V462C699 489.614 676.614 512 649 512H269.661C251.183 512 234.212 501.81 225.528 485.501L6.13894 73.5008Z');
+}
+
+@media only screen and (max-width: 900px) {
+	.mainbox {
+		display: none;
+	}
+
+	.logobanner {
+		display: none;
+	}
+
+	.mainboxmobile {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.contentbox {
+			margin-top: 160px;
+
+			h1 {
+				font-size: 40px;
+				font-weight: normal;
+				margin: 0;
+
+				span {
+					color: $cyber-blue;
+				}
+			}
+
+			p {
+				color: whitesmoke;
+				font-size: 15px;
+
+				span {
+					color: $cyber-blue;
+					font-weight: bold;
+				}
+			}
+
+			button:nth-child(odd) {
+				width: 100px;
+				height: 30px;
+				font-size: 10px;
+				font-weight: bold;
+				color: white;
+				background: $deep-blue;
+				// box-shadow: 8px 7px 15px 5px $cyber-blue;
+				border-radius: 30px;
+				border: none;
+				outline: none;
+				transition: 0.3s;
+			}
+
+			button:nth-child(even) {
+				width: 100px;
+				height: 30px;
+				font-size: 10px;
+				font-weight: bold;
+				color: $deep-blue;
+				border: 3px solid $deep-blue;
+				box-sizing: border-box;
+				// box-shadow: 8px 7px 15px 5px $cyber-blue;
+				border-radius: 30px;
+				outline: none;
+				margin-left: 40px;
+			}
+		}
+	}
+}
