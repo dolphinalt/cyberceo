@@ -36,7 +36,7 @@ $green: #58e8a2;
 }
 
 .navlinks {
-	width: 40%;
+	width: 50%;
 	display: flex;
 	justify-content: center;
 
@@ -46,6 +46,9 @@ $green: #58e8a2;
 		margin: 0;
 		padding: 0;
 		float: left;
+		border: none;
+		outline: none;
+		text-decoration: none;
 	}
 
 	li {
@@ -74,12 +77,46 @@ $green: #58e8a2;
 		transform: scaleX(0);
 		transition: all 0.3s ease-in-out;
 	}
+
+	button {
+		border: none;
+		background: none;
+		position: relative;
+		display: block;
+		margin: 0 0 0;
+		color: $cyber-blue;
+		text-decoration: none;
+		font-size: 30px;
+	}
+	button, button:hover, button:active, button:focus {
+		outline: 0;
+	}
+}
+
+
+
+.dropdownItem {
+	outline: 0;
+	background: none;
+	position: relative;
+	display: block;
+	margin: 0 0 0 30px;
+	color: $cyber-blue;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.menu_item_team ul {
+	text-decoration: none;
+	border: none;
+	outline: none;
 }
 
 .navbutton {
 	width: 20%;
 	display: flex;
 	justify-content: center;
+	outline: none;
 
 	button {
 		width: 300px;

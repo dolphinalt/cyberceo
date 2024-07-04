@@ -6,47 +6,128 @@ import style from '../styles/EventsHero.module.scss'
 
 const EventsHero = () => {
 	return (
-		<div className={style.container}>
-			<div className={style.mainbox}>
-				<div className={style.topcontent}>
-					<div className={style.leftbox}>
-						<img
-							className={style.gamegraphic}
-							src="./bio_graphic.png"
-							alt="bioinformatics graphic"
-						/>
-					</div>
-					<div className={style.rightbox}>
-						<p>APR. 8th</p>
-						<p>
-							<span>Bioinformatics Webinar</span> for Middle and High School students
-						</p>
-						<p>
-            Learn about the rapidly growing and in demand field of bioinformatics that sits at the intersection of Biology, Math and Computer Science with guest speaker Dr. Andrew Su, Director of Bioinformatics at The Scripps Research Institute.
-						</p>
-
-						<div className={style.rightboxbuttons}>
-							<button>
-								{/* <FontAwesomeIcon className={style.calendaricon} icon={faCalendarAlt} /> */}
-								April 8th 2-3 PM (PDT)
-							</button>
-							<button>
-								{/* <FontAwesomeIcon className={style.mapicon} icon={faMapMarkerAlt} /> */}
-								Online
-							</button>
+		<div id="eventgrid" className={style.mainbox}>
+			<div className={style.content}>
+				{/* LEFT STYLE EVENT */}
+				<div className={style.eventDiv}>
+					<div className={style.eventImgDiv}>
+						<div className={style.eventImgCurrent}>
+							<img
+								className={style.eventpicCurrent}
+								src="https://placehold.co/500x500"
+								alt="Event"
+							/>
 						</div>
-
-						<a
-							href="https://tinyurl.com/bioinfowebinar"
-							target="_blank"
-							rel="noreferrer"
-						>
-							<button>Sign Up</button>
-						</a>
+						<div className={style.signupDiv}>
+							<br></br>
+							<span>Sign up!</span>
+							<h4><i>Days left: #</i></h4>
+						</div>
+					</div>
+					<div className={style.eventBio}>
+						<br></br>
+						<h1>Event Name</h1>
+						<h2><i>Dates</i></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+						<br></br>
 					</div>
 				</div>
+				{/* LEFT STYLE EVENT */}
+
+				<h1>Past Events</h1>
+
+				{/* RIGHT STYLE EVENT */}
+				<div className={style.eventDiv}>
+					<div className={style.eventBio}>
+						<br></br>
+						<h1>Event Name</h1>
+						<h2><i>Dates</i></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+						<br></br>
+					</div>
+					<div className={style.eventImgDiv}>
+						<div className={style.eventImg}>
+							<img
+								className={style.eventpic}
+								src="https://placehold.co/500x500"
+								alt="Event"
+							/>
+							<img
+								className={style.eventpic}
+								src="https://placehold.co/500x500"
+								alt="Event"
+							/>
+						</div>
+						<div className={style.eventImg}>
+							<img
+								className={style.eventpic}
+								src="https://placehold.co/500x500"
+								alt="Event"
+							/>
+							<img
+								className={style.eventpic}
+								src="https://placehold.co/500x500"
+								alt="Event"
+							/>
+						</div>
+						<div className={style.signupDivExpiredHalf}>
+							<br></br>
+							<span>25+</span>
+							<h4><i>Staff members taught</i></h4>
+						</div>
+						<div className={style.signupDivExpiredHalf}>
+							<br></br>
+							<span>400+</span>
+							<h4><i>Seniors reached</i></h4>
+						</div>
+					</div>
+				</div>
+				{/* RIGHT STYLE EVENT */}
+
+				{/* LEFT STYLE EVENT */}
+				<div className={style.eventDiv}>
+					<div className={style.eventImgDiv}>
+						<div className={style.eventImg}>
+							<img
+								className={style.eventpic}
+								src="https://placehold.co/500x500"
+								alt="Event"
+							/>
+							<img
+								className={style.eventpic}
+								src="https://placehold.co/500x500"
+								alt="Event"
+							/>
+						</div>
+						<div className={style.eventImg}>
+							<img
+								className={style.eventpic}
+								src="https://placehold.co/500x500"
+								alt="Event"
+							/>
+							<img
+								className={style.eventpic}
+								src="https://placehold.co/500x500"
+								alt="Event"
+							/>
+						</div>
+						<div className={style.signupDivExpiredFull}>
+							<br></br>
+							<span>650+</span>
+							<h4><i>Elementary students taught</i></h4>
+						</div>
+					</div>
+					<div className={style.eventBio}>
+						<br></br>
+						<h1>Event Name</h1>
+						<h2><i>Dates</i></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+						<br></br>
+					</div>
+				</div>
+				{/* LEFT STYLE EVENT */}
+
 			</div>
-			<h1>Past Events</h1>
 		</div>
 	)
 }

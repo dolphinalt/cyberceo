@@ -20,6 +20,7 @@ const Home = () => {
             <div className={styles.heroContainer}>
                 <Hero />
             </div>
+			<About />
         </>
     )
 }
