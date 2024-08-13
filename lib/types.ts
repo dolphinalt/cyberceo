@@ -1,3 +1,3 @@
 export interface NavProps {
-	active: 'home' | 'team' | 'events' | 'donate'
+	active: 'home' | 'team' | 'events' | 'webcasts'
 }

@@ -30,10 +30,10 @@ const Nav = (props: NavProps) => {
                   </Button>
                 </DropdownTrigger>
                 <DropdownMenu className={style.menu_item_team}>
-                  <DropdownItem className={style.dropdownItem}>
+                  <DropdownItem className={style.dropdownItemBlock}>
                     <Link href="/leadership"><b>Leadership</b></Link>
                   </DropdownItem>
-                  <DropdownItem className={style.dropdownItem}>
+                  <DropdownItem className={style.dropdownItemBlock}>
                     <Link href="/services"><b>Del Norte High School</b></Link>
                   </DropdownItem>
                 </DropdownMenu>
@@ -43,7 +43,7 @@ const Nav = (props: NavProps) => {
               <Link href="/events"><b>Events</b></Link>
             </li>
             <li>
-              <Link href="/donate"><b>Webcasts</b></Link>
+              <Link href="/webcasts"><b>Webcasts</b></Link>
             </li>
           </ul>
         </div>

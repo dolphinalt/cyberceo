@@ -2,6 +2,7 @@ import Nav from '../components/Nav'
 import Hero from '../components/Hero'
 import About from '../components/About'
 import styles from '../styles/Home.module.scss'  // Import your stylesheet
+import Footer from '../components/Footer'
 
 const Home = () => {
     return (
@@ -21,6 +22,7 @@ const Home = () => {
                 <Hero />
             </div>
 			<About />
+			{/* <Footer /> */}
         </>
     )
 }
