@@ -12,7 +12,7 @@ $red: #ff726f;
 	margin-top: 160px;
 
 	.content {
-		width: 1200px;
+		width: 75%;
 		text-align: center;
 
 		h1 {
@@ -33,12 +33,12 @@ $red: #ff726f;
 		.webcastDiv {
 	
 			.webcastVideo {
-				margin-left: -29%;
+				margin-left: -11%;
 				display: inline-block;
 			}
 
 			.webcastInfo {
-				width: 30%;
+				width: 50%;
 				margin-left: 10%;
 				border-radius: 20px;
 				display: inline-block;
@@ -144,9 +144,10 @@ $red: #ff726f;
 		}
 
 		.webcastBio {
-			width: 127%;
+			text-align: center;
+			width: 100%;
 			margin: 30px;
-			margin-left: -27%;
+			margin-left: -11%;
 			margin-top: -3%;
 			transform: translateY(15px);
 		}

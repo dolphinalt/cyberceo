@@ -13,7 +13,7 @@ const WebcastsHero = () => {
 
 				<div className={style.webcastDiv}>
 					<div className={style.webcastVideo}>
-						<iframe width="1024" height="576" src="https://www.youtube.com/embed/7Z0lsyc-rOc" title="CyberCEO Webcast Episode 1: Coach Paul Johnson" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<iframe width="768" height="432" src="https://www.youtube.com/embed/7Z0lsyc-rOc" title="CyberCEO Webcast Episode 1: Coach Paul Johnson" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 					<div className={style.webcastInfo}>
 						<div className={style.signupDivExpiredFull}>
@@ -22,7 +22,7 @@ const WebcastsHero = () => {
 							<h4>Guest Speaker: Paul Johnson, Coach of the CyberAegis Team<br></br>Government Cybersecurity: Inspirations and Accomplishments<br></br>Cybersecurity Competition Team: How to build a competitive team, qualities learned from student-led program<br></br>Cybersecurity Opportunities: CyberPatriot, how to get started<br></br>Cybersecurity: What makes cybersecurity so important, future developments<br></br>Coach Paul Johnson Day</h4>
 							<br></br>
 							<span>Additional Resources</span>
-							<h4>resources<br></br>by<br></br>line</h4>
+							<h4>CyberPatriot - The National Youth Cyber Education Program<br></br>• https://www.uscyberpatriot.org/<br></br>Cyber Community Education Outreach Initiative (CyberCEO)<br></br>• https://www.cyberceo-sd.org/<br></br>Cal Poly SLO - Space Grand Challenge Competition<br></br>• https://cci.calpoly.edu/empower/space-grand-challenge-program<br></br>Northrop Grumman - High School Involvement Partnership Mentoring Program<br></br>• https://www.northropgrumman.com/corporate-responsibility/corporate-citizenship/hip-high-school-involvement-partnership-mentoring-program</h4>
 						</div>
 					</div>
 					<div className={style.webcastBio}>
