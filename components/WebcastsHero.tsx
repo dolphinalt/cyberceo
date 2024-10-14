@@ -33,12 +33,12 @@ const WebcastsHero = () => {
 				</div>
 				{/* WEBCAST TEMPLATE */}
 				{/* WEBCAST TEMPLATE */}
-				<h1>CyberCEO Webcast Episode _: Webcast name</h1>
+				{/* <h1>CyberCEO Webcast Episode _: Webcast name</h1> */}
 
-				<div className={style.webcastDiv}>
-					<div className={style.webcastVideo}> 
+				{/* <div className={style.webcastDiv}>
+					<div className={style.webcastVideo}>  */}
 					{/* Replace the line below with the copy embed from youtube, width: 1024, height: 576  */}
-						<iframe width="1024" height="576" src="https://www.youtube.com/embed/7Z0lsyc-rOc" title="CyberCEO Webcast Episode 1: Coach Paul Johnson" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						{/* <iframe width="1024" height="576" src="https://www.youtube.com/embed/7Z0lsyc-rOc" title="CyberCEO Webcast Episode 1: Coach Paul Johnson" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 					<div className={style.webcastInfo}>
 						<div className={style.signupDivExpiredFull}>
@@ -55,7 +55,7 @@ const WebcastsHero = () => {
 						<p>youtube bio</p>
 						<br></br>
 					</div>
-				</div>
+				</div> */}
 				{/* WEBCAST TEMPLATE */}
 			</div>
 		</div>
